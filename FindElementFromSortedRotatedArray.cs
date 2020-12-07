@@ -7,6 +7,7 @@ namespace Algorithms
 {
     class FindElementFromSortedRotatedArray
     {
+        //split the array to 2 sorted arrays
         public static void splitAndFind(int[] arr,int item)
         {
             int maxIndex=Array.IndexOf(arr,arr.Max());
@@ -18,6 +19,7 @@ namespace Algorithms
                 BinarySearch(arr, maxIndex + 1, arr.Length - 1,item);
         }
 
+        //Binary search
         public static void BinarySearch(int[] arr,int low,int high,int item)
         {
             if (low > high)
