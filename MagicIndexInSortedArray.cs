@@ -6,6 +6,7 @@ namespace Algorithms
 {
     class MagicIndexInSortedArray
     {
+        //Binary search
         public static void findMagicIndex(int[] arr,int low,int high)
         {
             if(low>high)
