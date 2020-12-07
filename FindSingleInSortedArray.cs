@@ -6,6 +6,7 @@ namespace Algorithms
 {
     class FindSingleInSortedArray
     {
+        //Binary search based
         public static void findSingle(int[] arr,int low,int high)
         {
             if (low > high)
@@ -21,8 +22,11 @@ namespace Algorithms
             }
            
            int mid = (low + high) / 2;
-
-           if (mid % 2 == 0)
+            // If mid is even and element
+            // next to mid is same as mid
+            // then output element lies on
+            // right side, else on left side
+            if (mid % 2 == 0)
            {
                 if (arr[mid] == arr[mid + 1])
                     findSingle(arr, mid + 2, high);
