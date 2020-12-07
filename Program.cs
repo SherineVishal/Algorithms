@@ -16,12 +16,12 @@ namespace Algorithms
             
             */
             
-            /*
+            
             
             int[] arr = { 1,1, 3, 3, 4,5, 5, 7, 7, 8,8}; 
             FindSingleInSortedArray.findSingle(arr,0,arr.Length-1);
 
-            */
+            
         }
     }
 }
