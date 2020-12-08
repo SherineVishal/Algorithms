@@ -77,14 +77,30 @@ namespace Algorithms
             */
 
             /*
-             
-            Given an array of numbers, 
+
+            6. Given an array of numbers, 
                 split the array into two where one array contains the sum of n - 1 numbers and the other array with all the n - 1 elements.
 
             */
 
+            /*
+
             int[] arr = { 1, 5, 8, 6, 20 };
             SplitTheArray.split(arr);
+
+            */
+
+
+
+            /*
+
+            Write an efficient program to 
+            find the sum of contiguous subarray within a one-dimensional array of numbers which has the largest sum. 
+            */
+
+            int[] arr = { -2,-3,4,-1,-2,1,5,-3};
+            LargestSumContiguousSubarray.largestSum(arr);
+
 }
 }
 }
