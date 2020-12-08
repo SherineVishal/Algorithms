@@ -6,6 +6,7 @@ namespace Algorithms
 {
     class LargestSumContiguousSubarray
     {
+        //Using global and local sum
         public static void largestSum(int[] arr)
         {
             int maxGlobalSum = int.MinValue;
@@ -29,6 +30,7 @@ namespace Algorithms
                     maxGlobalSum = maxLocalSum;
                 }
             }
+
 
             Console.WriteLine("The largest sum of the contiguous sub array is {0} and that is between the index {1} and {2}", 
                 maxGlobalSum, startIndex, endIndex);
