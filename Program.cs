@@ -113,6 +113,13 @@ namespace Algorithms
             FindMissingNumberInFirstN.findMissing(arr);
             */
 
+            /*
+             * Given an unsorted array of nonnegative integers, find a continous subarray which adds to a given number.
+             */
+
+            int[] arr = { 1, 4 };
+            FindSubarrayWithGivenSum.findSubArray(arr,0);
+
 
 
 }
