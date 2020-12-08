@@ -127,8 +127,19 @@ namespace Algorithms
              * If there are more than one subarrays with sum as the given number, print any of them.
              * */
 
+            /*
+
             int[] arr = { 10, 2, -2, -20, 10 };
             FindSubarrayWithGivenSumNegative.findSubArray(arr, -10);
+
+            */
+
+            /*
+             * Write a program to sort an array of 0's,1's and 2's in ascending order.
+             */
+
+            int[] arr = { 0,2,2,1,1,0,0,1,2};
+            SortZeroOneTwo.Sort012(arr);
 
 
 
