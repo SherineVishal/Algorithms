@@ -98,8 +98,22 @@ namespace Algorithms
             find the sum of contiguous subarray within a one-dimensional array of numbers which has the largest sum. 
             */
 
+            /*
             int[] arr = { -2,-3,4,-1,-2,1,5,-3};
             LargestSumContiguousSubarray.largestSum(arr);
+            */
+
+            /*
+             * You are given a list of n-1 integers and these integers are in the range of 1 to n. There are no duplicates in list. 
+             * One of the integers is missing in the list. Write an efficient code to find the missing integer.
+             * */
+
+            /*
+            int[] arr = { 1,4,2,5};
+            FindMissingNumberInFirstN.findMissing(arr);
+            */
+
+
 
 }
 }
