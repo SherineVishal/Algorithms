@@ -36,14 +36,31 @@ namespace Algorithms
             */
 
             /*
-             
+
             3. Given a sorted array of n integers that has been rotated an unknown number of times, write code to find an element in the array. 
             You may assume that the array was originally sorted in increasing order.
 
             */
 
+            /*
+
             int[] arr = { 4, 5, 6, 1, 2, 3 };
-            FindElementFromSortedRotatedArray.splitAndFindray(arr, 7);
-        }
-    }
+            FindElementFromSortedRotatedArray.splitAndFind(arr, 7);
+
+            */
+
+            /*
+
+            4. Given an array that contains numbers from 1 to n-1 and exactly 1 duplicate, find that duplicate.
+
+            */
+
+            /*
+
+            int[] arr = { 1, 2, 3, 4, 4, 5, 6 };
+            FindDuplicateNumberInFirstN.findDuplicate(arr);
+
+            */
+}
+}
 }
