@@ -117,8 +117,22 @@ namespace Algorithms
              * Given an unsorted array of nonnegative integers, find a continous subarray which adds to a given number.
              */
 
-            int[] arr = { 1, 4 };
+            /*
+             int[] arr = { 1, 4 };
             FindSubarrayWithGivenSum.findSubArray(arr,0);
+            */
+
+            /*
+             * Given an unsorted array of integers(both negative and positive), find a subarray which adds to a given number. 
+             * If there are more than one subarrays with sum as the given number, print any of them.
+             * */
+
+            int[] arr = { 10, 2, -2, -20, 10 };
+            FindSubarrayWithGivenSumNegative.findSubArray(arr, -10);
+
+
+
+
 
 
 
