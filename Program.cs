@@ -61,6 +61,30 @@ namespace Algorithms
             FindDuplicateNumberInFirstN.findDuplicate(arr);
 
             */
+
+
+            /*
+
+            5.	Search an element in an array where difference between adjacent elements is 1.
+
+             */
+
+            /*
+
+            int[] arr = { 8, 7, 6, 7, 6, 5, 4, 3, 2, 3, 4, 3 };
+            FindElementAdjacentDifferenceOne.findElement(arr, 3);
+
+            */
+
+            /*
+             
+            Given an array of numbers, 
+                split the array into two where one array contains the sum of n - 1 numbers and the other array with all the n - 1 elements.
+
+            */
+
+            int[] arr = { 1, 5, 8, 6, 20 };
+            SplitTheArray.split(arr);
 }
 }
 }
