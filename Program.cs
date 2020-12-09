@@ -158,17 +158,20 @@ namespace Algorithms
             A[0] + A[1] + A[2]  =  A[4] + A[5] + A[6]
 
                         */
-
+            /*
             int[] arr = { -7, 1, 5, 2, -4, 3, 0 };
             EquilibriumIndex.findEquilibriumIndex(arr);
 
+            */
 
+            /*
+             * Write a program to print all the LEADERS in the array.
+             * An element is leader if it is greater than all the elements to its right side. 
+             * And the rightmost element is always a leader. For example int the array {16, 17, 4, 3, 5, 2}, leaders are 17, 5 and 2.
+             * */
 
-
-
-
-
-
+            int[] arr = { 16, 17, 4, 3, 5, 2 };
+            Leaders.printLeaders(arr);
 
 }
 }
