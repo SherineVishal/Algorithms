@@ -44,7 +44,7 @@ namespace Algorithms
 
            */
 
-            /* Method II */
+            /* Method II - Dutch Flag*/
 
             int low = 0, mid = 0, high = arr.Length - 1;
             int temp;

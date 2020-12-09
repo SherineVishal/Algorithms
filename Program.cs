@@ -138,8 +138,31 @@ namespace Algorithms
              * Write a program to sort an array of 0's,1's and 2's in ascending order.
              */
 
+            /*
+
             int[] arr = { 0,2,2,1,1,0,0,1,2};
             SortZeroOneTwo.Sort012(arr);
+
+            */
+
+            /*
+             * Equilibrium index of an array is an index such that the sum of elements at lower indexes is equal to the sum of elements at higher indexes. For example, in an array A:
+            Example :
+
+            Input : A[] = {-7, 1, 5, 2, -4, 3, 0}
+
+            Output : 3
+
+            3 is an equilibrium index, because:
+
+            A[0] + A[1] + A[2]  =  A[4] + A[5] + A[6]
+
+                        */
+
+            int[] arr = { -7, 1, 5, 2, -4, 3, 0 };
+            EquilibriumIndex.findEquilibriumIndex(arr);
+
+
 
 
 
