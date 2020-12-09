@@ -211,6 +211,8 @@ namespace Algorithms
 
                         */
 
+            /*
+
             int[,] arr =
             {
                 { 1,   2,   3,   4, 5, 6},
@@ -222,6 +224,16 @@ namespace Algorithms
             };
 
             PrintSpiral.print(arr);
-        }
-    }
+
+            */
+
+            /*
+             * Print the elements of an array in the decreasing frequency if 2 numbers have same frequency then print the one which came first.
+             * */
+
+            int[] arr = { 3, 1, 5, 3, 5, 3 };
+            SortBasedOnFrequency.sort(arr);
+
+}
+}
 }
