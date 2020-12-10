@@ -2,6 +2,17 @@
 
 namespace Algorithms
 {
+    class Interval
+    {
+        public int start;
+        public int end;
+
+        public Interval(int start, int end)
+        {
+            this.start = start;
+            this.end = end;
+        }
+    }
     class Program
     {
         static void Main(string[] args)
@@ -277,6 +288,7 @@ namespace Algorithms
              * 19.Reverse a stack and put the reversed value back in the same stack.You can use only one other stack and a temp variable.
              * */
 
+            /*
             Stack<int> stack = new Stack<int>();
             stack.Push(1);
             stack.Push(2);
@@ -284,6 +296,24 @@ namespace Algorithms
             stack.Push(4);
             stack.Push(5);
             ReverseStack.reverse(stack);
-}
-}
+            */
+
+            /*
+             * 20.	Given a set of time intervals in any order, merge all overlapping intervals into one and output the result 
+             * which should have only mutually exclusive intervals. Let the intervals be represented as pairs of integers for simplicity. 
+             * For example, let the given set of intervals be {{1,3}, {2,4}, {5,7}, {6,8} }. 
+             * The intervals {1,3} and {2,4} overlap with each other, so they should be merged and become {1, 4}. 
+             * Similarly {5, 7} and {6, 8} should be merged and become {5, 8}
+             * */
+
+            List<Interval> intervals = new List<Interval>();
+            intervals.Add(new Interval(1, 3));
+            intervals.Add(new Interval(5,7));
+            intervals.Add(new Interval(2,4));
+            intervals.Add(new Interval(6, 8));
+
+            MergeIntervals.merge(intervals);
+        }
+
+    }
 }
