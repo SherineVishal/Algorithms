@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Algorithms
+﻿namespace Algorithms
 {
     class Program
     {
@@ -244,9 +242,10 @@ namespace Algorithms
              * */
 
 
-            int[] arr = { 7, 10, 4, 3, 20, 15 };
+            /*
+             * int[] arr = { 7, 10, 4, 3, 20, 15 };
             KthSmallest.findKthSmallest(arr, 0,5,3);
-            
+            */
 
 
             /*QuickSort.quickSort(arr, 0, 4);
@@ -254,10 +253,12 @@ namespace Algorithms
             foreach (var item in arr)
                 Console.WriteLine(item);*/
 
+            /*
+             * 17.	Find missing parenthesis in a given expression – 2 * ( 3 + 5(sasdfasdfasd)
+             */
 
-
-
-
-}
-}
+            string exp = "2 * (3 + 5(sasdfasdfasd))";
+            FindMissingParenthesis.findMissingParenthesis(exp);
+        }
+    }
 }
