@@ -1,4 +1,6 @@
-﻿namespace Algorithms
+﻿using System.Collections.Generic;
+
+namespace Algorithms
 {
     class Program
     {
@@ -266,8 +268,22 @@
              * 18.	Evaluate an expression given only single digits and only 2 operators * and +.
              */
 
+            /*
             string exp = "3*4+2*2";
             EvaluateExpression.evaluate(exp);
+            */
+
+            /*
+             * 19.Reverse a stack and put the reversed value back in the same stack.You can use only one other stack and a temp variable.
+             * */
+
+            Stack<int> stack = new Stack<int>();
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
+            stack.Push(4);
+            stack.Push(5);
+            ReverseStack.reverse(stack);
 }
 }
 }
