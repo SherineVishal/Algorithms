@@ -257,8 +257,17 @@
              * 17.	Find missing parenthesis in a given expression – 2 * ( 3 + 5(sasdfasdfasd)
              */
 
+            /*
             string exp = "2 * (3 + 5(sasdfasdfasd))";
             FindMissingParenthesis.findMissingParenthesis(exp);
-        }
-    }
+            */
+
+            /*
+             * 18.	Evaluate an expression given only single digits and only 2 operators * and +.
+             */
+
+            string exp = "3*4+2*2";
+            EvaluateExpression.evaluate(exp);
+}
+}
 }
