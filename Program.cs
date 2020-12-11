@@ -397,9 +397,21 @@ namespace Algorithms
              * 25. Write a method to replace all spaces in a string with ‘%20’.
              */
 
+            /*
             string str = "Sherine Thomas";
             char[] strArray = str.ToCharArray();
             StringReplace.replace(strArray);
+            */
+            /*
+            26.Implement a method to perform a basic string compression using the counts of repeated characters.
+
+            For example, the string aabccccaaa would become a2b1c4a3.
+
+            If the compressed string would not become smaller than the original string, your method should return the original string.
+            */
+
+            string str = "aabccccaaa";
+            CompressionString.compress(str);
 
             /*
              * Ex1: Blanagram
