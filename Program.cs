@@ -339,6 +339,8 @@ namespace Algorithms
 
                         */
 
+            /*
+
             Stack<int> stack = new Stack<int>();
             stack.Push(4);
             stack.Push(6);
@@ -346,10 +348,43 @@ namespace Algorithms
             stack.Push(7);
             stack.Push(4);
             stack.Push(3);
-            
+
 
             PairWiseConsecutive.pairWiseConsecutive(stack);
-        }
 
-    }
+            */
+
+            /*
+             * 
+             * 22.	Given two expressions in the form of strings. The task is to compare them and check if they are similar. Expressions consist of lowercase alphabets, ‘+’, ‘-‘ and ‘( )’. 
+
+            Examples: 
+
+            Input : exp1 = "-(a+b+c)" exp2 = "-a-b-c" 
+
+            Output : Yes 
+
+            Input : exp1 = "-(c+b+a)" exp2 = "-c-b-a" 
+
+            Output : Yes 
+
+            Input : exp1 = "a-b-(c-d)" exp2 = "a-b-c-d" 
+
+            Output : No 
+
+            It may be assumed that there are at most 26 operands from ‘a’ to ‘z’ and every operand appears only once.
+
+                        */
+
+            //Not done
+
+            /*
+             * Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
+             */
+
+            string str = "Sherine Tom bz";
+            StringAllUniqueChar.isUnique(str);
+}
+
+}
 }
