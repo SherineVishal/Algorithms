@@ -409,9 +409,10 @@ namespace Algorithms
 
             If the compressed string would not become smaller than the original string, your method should return the original string.
             */
-
+            /*
             string str = "aabccccaaa";
             CompressionString.compress(str);
+            */
 
             /*
              * Ex1: Blanagram
@@ -429,11 +430,22 @@ namespace Algorithms
             foreach (var item in arr)
                 Console.WriteLine(item);*/
 
+            /*
+             * Ex3: Find a count of a word in a string
+             */
+            //search for single word
 
+            /*
+            string str = "And and is a by and";
+            string word = "and";
+            
+            FindWordOccurrence.findOccurence(str,word);*/
 
+            //count the occurence of multiple words
+            string str = "And and is a by and is a";
+            string[] words = { "and" ,"is","by"};
 
-
-
+            FindWordOccurrence.findOccurences(str, words);
 
         }
 
