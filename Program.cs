@@ -261,11 +261,6 @@ namespace Algorithms
             */
 
 
-            /*QuickSort.quickSort(arr, 0, 4);
-
-            foreach (var item in arr)
-                Console.WriteLine(item);*/
-
             /*
              * 17.	Find missing parenthesis in a given expression – 2 * ( 3 + 5(sasdfasdfasd)
              */
@@ -379,12 +374,46 @@ namespace Algorithms
             //Not done
 
             /*
-             * Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
+             * 23. Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
              */
 
+            /*
             string str = "Sherine Tom bz";
             StringAllUniqueChar.isUnique(str);
-}
+            */
 
-}
+            /*
+             * 24. Given two strings, write a method to decide if one is a permutation of the other?(anagram)
+             */
+
+            /*
+
+            string str1 = "abcd abcd";
+            string str2 = "bcbc adad";
+            StringPermutation.isPermutation(str1, str2);
+            */
+
+            /*
+             * Ex1: Blanagram
+             */
+
+            string str1 = "abcd abcd";
+            string str2 = "bcbc eded";
+
+            Blanagram.isPermutation(str1, str2);
+
+            /* Ex2: QuickSort */
+
+            /*QuickSort.quickSort(arr, 0, 4);
+
+            foreach (var item in arr)
+                Console.WriteLine(item);*/
+
+
+
+
+
+        }
+
+    }
 }
