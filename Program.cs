@@ -394,13 +394,21 @@ namespace Algorithms
             */
 
             /*
-             * Ex1: Blanagram
+             * 25. Write a method to replace all spaces in a string with ‘%20’.
              */
 
+            string str = "Sherine Thomas";
+            char[] strArray = str.ToCharArray();
+            StringReplace.replace(strArray);
+
+            /*
+             * Ex1: Blanagram
+             */
+            /*
             string str1 = "abcd abcd";
             string str2 = "bcbc eded";
 
-            Blanagram.isPermutation(str1, str2);
+            Blanagram.isPermutation(str1, str2);*/
 
             /* Ex2: QuickSort */
 
@@ -408,6 +416,8 @@ namespace Algorithms
 
             foreach (var item in arr)
                 Console.WriteLine(item);*/
+
+
 
 
 
