@@ -306,6 +306,8 @@ namespace Algorithms
              * Similarly {5, 7} and {6, 8} should be merged and become {5, 8}
              * */
 
+            /*
+
             List<Interval> intervals = new List<Interval>();
             intervals.Add(new Interval(1, 3));
             intervals.Add(new Interval(5,7));
@@ -313,6 +315,40 @@ namespace Algorithms
             intervals.Add(new Interval(6, 8));
 
             MergeIntervals.merge(intervals);
+
+            */
+
+            /*
+             * 
+             * 21.	Given a stack of integers, write a function pairWiseConsecutive() that checks whether numbers in the stack are pairwise consecutive or not. The pairs can be increasing or decreasing, and if the stack has an odd number of elements, the element at the top is left out of a pair. The function should retain the original stack content.
+
+            Only following standard operations are allowed on stack. 
+            push(X): Enter a element X on top of stack. 
+            pop(): Removes top element of the stack. 
+            empty(): To check if stack is empty. 
+
+            Examples: 
+            Input : stack = [4, 5, -2, -3, 11, 10, 5, 6, 20] 
+            Output : Yes 
+
+            Each of the pairs (4, 5), (-2, -3), (11, 10) and (5, 6) consists of consecutive numbers. 
+
+            Input : stack = [4, 6, 6, 7, 4, 3] 
+            Output : No 
+            (4, 6) are not consecutive.
+
+                        */
+
+            Stack<int> stack = new Stack<int>();
+            stack.Push(4);
+            stack.Push(6);
+            stack.Push(6);
+            stack.Push(7);
+            stack.Push(4);
+            stack.Push(3);
+            
+
+            PairWiseConsecutive.pairWiseConsecutive(stack);
         }
 
     }
