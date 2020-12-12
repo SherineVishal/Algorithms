@@ -438,16 +438,40 @@ namespace Algorithms
             /*
             string str = "And and is a by and";
             string word = "and";
-            
+
             FindWordOccurrence.findOccurence(str,word);*/
 
             //count the occurence of multiple words
+            /*
             string str = "And and is a by and is a";
             string[] words = { "and" ,"is","by"};
 
             FindWordOccurrence.findOccurences(str, words);
+            */
 
-        }
+            /*
+             * 27.	Write an algorithm such that if an element in an MxN matrix is 0, its entire row and column are set to 0.
+             */
 
-    }
+            /*(not correct)
+
+            int[,] arr = { { 0, 1, 1, 0 }, 
+                { 1, 1, 0, 1 }, 
+                { 1, 1, 1, 1 } 
+            };
+
+            SetToZeroMXN.modify(arr);
+
+            */
+
+            /*
+             * 29.	Find negative numbers in an array
+             */
+
+            int[] arr = { 1, -3, -4, 9 };
+            FindNegative.findNegative(arr);
+
+}
+
+}
 }
