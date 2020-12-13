@@ -443,8 +443,8 @@ namespace Algorithms
             /* 30. Find duplicates in a given array
              */
 
-            int[] arr = { 2, 1, 4, 3, 1, 2, 5 };
-            FindDuplicates.find(arr);
+            /*int[] arr = { 2, 1, 4, 3, 1, 2, 5 };
+            FindDuplicates.find(arr);*/
 
             /*
             * Ex1: Blanagram
@@ -480,6 +480,13 @@ namespace Algorithms
 
             FindWordOccurrence.findOccurences(str, words);
             */
+
+            /*
+             * Reverse a string
+             */
+
+            string str = "Madam, I'm Adam";
+            ReverseString.reverse(str);
 
         }
 
