@@ -415,8 +415,40 @@ namespace Algorithms
             */
 
             /*
-             * Ex1: Blanagram
+              * 27.	Write an algorithm such that if an element in an MxN matrix is 0, its entire row and column are set to 0.
+              */
+
+            /*(not correct)
+
+            int[,] arr = { { 0, 1, 1, 0 }, 
+                { 1, 1, 0, 1 }, 
+                { 1, 1, 1, 1 } 
+            };
+
+            SetToZeroMXN.modify(arr);
+
+            */
+
+            /*
+             * 29.	Find negative numbers in an array
              */
+
+            /*
+
+            int[] arr = { 1, -3, -4, 9 };
+            FindNegative.findNegative(arr);
+
+            */
+
+            /* 30. Find duplicates in a given array
+             */
+
+            int[] arr = { 2, 1, 4, 3, 1, 2, 5 };
+            FindDuplicates.find(arr);
+
+            /*
+            * Ex1: Blanagram
+            */
             /*
             string str1 = "abcd abcd";
             string str2 = "bcbc eded";
@@ -449,29 +481,7 @@ namespace Algorithms
             FindWordOccurrence.findOccurences(str, words);
             */
 
-            /*
-             * 27.	Write an algorithm such that if an element in an MxN matrix is 0, its entire row and column are set to 0.
-             */
+        }
 
-            /*(not correct)
-
-            int[,] arr = { { 0, 1, 1, 0 }, 
-                { 1, 1, 0, 1 }, 
-                { 1, 1, 1, 1 } 
-            };
-
-            SetToZeroMXN.modify(arr);
-
-            */
-
-            /*
-             * 29.	Find negative numbers in an array
-             */
-
-            int[] arr = { 1, -3, -4, 9 };
-            FindNegative.findNegative(arr);
-
-}
-
-}
+    }
 }
