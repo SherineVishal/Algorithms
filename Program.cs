@@ -515,10 +515,14 @@ namespace Algorithms
             /*
              * Ex 9: Odd numbers 
              */
-
-            int n = 0;
+            /*
+            
             OddNumbers.print();
-                
+                */
+            /*
+            int n=100;
+            PrimeNumbers.print(n);
+            */
         }
 
     }
