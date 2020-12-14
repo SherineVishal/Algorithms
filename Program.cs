@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Algorithms
 {
@@ -482,12 +483,42 @@ namespace Algorithms
             */
 
             /*
-             * Reverse a string
+             * Ex4: Reverse a string
              */
-
+            /*
             string str = "Madam, I'm Adam";
             ReverseString.reverse(str);
+            */
 
+            /* Ex 5: nth fibonacci number */
+
+            /*int n = 10;
+            Console.WriteLine(Fibonacci.fiboWithoutRec(n));*/
+
+            /* Ex 6: print the fibonacci series */
+            /*
+            int n = 10;
+            for (int i = 0; i < 10; i++)
+                Console.WriteLine(Fibonacci.fibonacci(i));*/
+
+            /* Ex 7: Multiplication table */
+            /*
+            int n = 12, m = 12;
+
+            MultiplicationTable.print(n, m);
+            */
+
+            /* Ex 8: Sum from file */
+
+            /*SumFromFile.findSum();*/
+
+            /*
+             * Ex 9: Odd numbers 
+             */
+
+            int n = 0;
+            OddNumbers.print();
+                
         }
 
     }
