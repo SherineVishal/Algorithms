@@ -516,14 +516,19 @@ namespace Algorithms
              * Ex 9: Odd numbers 
              */
             /*
-            
+
             OddNumbers.print();
                 */
             /*
             int n=100;
             PrimeNumbers.print(n);
             */
-        }
 
-    }
+            /* Ex 10: Find the largest int value in an int array */
+
+            int[] arr = { 12,23,15,87,56,32,76};
+            Console.WriteLine(LargestValue.findMax(arr));
+}
+
+}
 }
