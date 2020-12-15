@@ -14,6 +14,18 @@ namespace Algorithms
             this.end = end;
         }
     }
+
+    class Node
+    {
+        public char data;
+        public Node next;
+
+        public Node(char data)
+        {
+            this.data = data;
+            this.next = null;
+        }
+    }
     class Program
     {
         static void Main(string[] args)
@@ -448,8 +460,21 @@ namespace Algorithms
             FindDuplicates.find(arr);*/
 
             /*
-            * Ex1: Blanagram
-            */
+             * 31. Write an algorithm to determine if a linkedlist is a palindrome
+             * */
+
+            Node head = new Node('a');
+            head.next = new Node('b');
+            head.next.next = new Node('c');
+            head.next.next.next = new Node('c');
+            head.next.next.next.next = new Node('b');
+            
+
+            LinkedListPalindrome.isPalindrome(head);
+
+            /*
+             * Ex1: Blanagram
+             */
             /*
             string str1 = "abcd abcd";
             string str2 = "bcbc eded";
@@ -525,10 +550,49 @@ namespace Algorithms
             */
 
             /* Ex 10: Find the largest int value in an int array */
-
+            /*
             int[] arr = { 12,23,15,87,56,32,76};
             Console.WriteLine(LargestValue.findMax(arr));
-}
+            */
+
+            /*
+             * Format an RGB value (three 1-byte numbers) as a 6-digit hexadecimal string.
+             */
+
+            /*
+            int r = 1000, g=0,b=0;
+            RGBToHex.convert(r,g,b);
+
+            string hex= "3E8";
+            RGBToHex.convertHexToInt(hex);
+            */
+
+            /* 
+             * Ex 11: Reverse a linked list */
+
+            //Node head = new Node(1);
+            //head.next = new Node(2);
+            //head.next.next = new Node(3);
+            //head.next.next.next = new Node(4);
+            //head.next.next.next.next = new Node(5);
+
+            //LinkedListReverse.reverse(head);
+
+            /*
+             * Middle of a linked list */
+            /*
+
+            Node head = new Node(1);
+            head.next = new Node(2);
+            head.next.next = new Node(3);
+            head.next.next.next = new Node(4);
+            head.next.next.next.next = new Node(5);
+
+            LinkedListMiddle.middle(head);
+
+                */
+
+        }
 
 }
 }
