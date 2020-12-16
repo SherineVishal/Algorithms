@@ -19,11 +19,13 @@ namespace Algorithms
     {
         public char data;
         public Node next;
+        public Node rand;
 
         public Node(char data)
         {
             this.data = data;
             this.next = null;
+            this.rand = null;
         }
     }
     class Program
@@ -477,6 +479,7 @@ namespace Algorithms
             /* 32. Write an algorithm to determine if a linkedlist is circular. FOLLOW UP: Determine where the circle meets.
              * */
 
+            /*
             Node head = new Node('a');
             Node bNode = new Node('b');
             Node cNode = new Node('c');
@@ -491,7 +494,33 @@ namespace Algorithms
             fNode.next = cNode;
 
             Console.WriteLine(CircularLinkedList.isCircular(head));
+            */
 
+            /* 33. Clone a linked list with a random pointer.*/
+
+            Node head = new Node('a');
+            Node bNode = new Node('b');
+            Node cNode = new Node('c');
+            Node dNode = new Node('d');
+            Node eNode = new Node('e');
+            Node fNode = new Node('f');
+            
+            head.next = bNode;
+            bNode.next = cNode;
+            cNode.next = dNode;
+            dNode.next = eNode;
+            eNode.next = fNode;
+            
+
+            head.rand = dNode;
+            bNode.rand = head;
+            cNode.rand = fNode;
+            dNode.rand = eNode;
+            eNode.rand = bNode;
+            fNode.rand = cNode;
+
+
+            CloneLinkedList.clone(head);
             /*
              * Ex1: Blanagram
              */
