@@ -17,11 +17,11 @@ namespace Algorithms
 
     class Node
     {
-        public char data;
+        public int data;
         public Node next;
         public Node rand;
 
-        public Node(char data)
+        public Node(int data)
         {
             this.data = data;
             this.next = null;
@@ -498,29 +498,51 @@ namespace Algorithms
 
             /* 33. Clone a linked list with a random pointer.*/
 
-            Node head = new Node('a');
-            Node bNode = new Node('b');
-            Node cNode = new Node('c');
-            Node dNode = new Node('d');
-            Node eNode = new Node('e');
-            Node fNode = new Node('f');
-            
+
+
+            //Node head = new Node('a');
+            //Node bNode = new Node('b');
+            //Node cNode = new Node('c');
+            //Node dNode = new Node('d');
+            //Node eNode = new Node('e');
+            //Node fNode = new Node('f');
+
+            //head.next = bNode;
+            //bNode.next = cNode;
+            //cNode.next = dNode;
+            //dNode.next = eNode;
+            //eNode.next = fNode;
+
+
+            //head.rand = dNode;
+            //bNode.rand = head;
+            //cNode.rand = fNode;
+            //dNode.rand = eNode;
+            //eNode.rand = bNode;
+            //fNode.rand = cNode;
+
+
+            //CloneLinkedList.clone(head);
+
+            /*
+             * 34.	Write code to remove duplicates from an unsorted linked list. Follow up: How would you solve it if temporary buffer is not allowed?
+             * */
+
+            Node head = new Node(3);
+            Node bNode = new Node(1);
+            Node cNode = new Node(3);
+            Node dNode = new Node(5);
+            Node eNode = new Node(2);
+            Node fNode = new Node(1);
+
             head.next = bNode;
             bNode.next = cNode;
             cNode.next = dNode;
             dNode.next = eNode;
             eNode.next = fNode;
-            
 
-            head.rand = dNode;
-            bNode.rand = head;
-            cNode.rand = fNode;
-            dNode.rand = eNode;
-            eNode.rand = bNode;
-            fNode.rand = cNode;
+            RemoveDuplicateLinkedList.remove(head);
 
-
-            CloneLinkedList.clone(head);
             /*
              * Ex1: Blanagram
              */
