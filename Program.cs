@@ -528,12 +528,33 @@ namespace Algorithms
              * 34.	Write code to remove duplicates from an unsorted linked list. Follow up: How would you solve it if temporary buffer is not allowed?
              * */
 
-            Node head = new Node(3);
-            Node bNode = new Node(1);
+
+
+            //Node head = new Node(3);
+            //Node bNode = new Node(1);
+            //Node cNode = new Node(3);
+            //Node dNode = new Node(5);
+            //Node eNode = new Node(2);
+            //Node fNode = new Node(1);
+
+            //head.next = bNode;
+            //bNode.next = cNode;
+            //cNode.next = dNode;
+            //dNode.next = eNode;
+            //eNode.next = fNode;
+
+            //RemoveDuplicateLinkedList.remove(head);
+
+            /*
+             * 35.Implement an algorithm to find the kth to the last element of a singly linked list
+             * */
+
+            Node head = new Node(1);
+            Node bNode = new Node(2);
             Node cNode = new Node(3);
-            Node dNode = new Node(5);
-            Node eNode = new Node(2);
-            Node fNode = new Node(1);
+            Node dNode = new Node(4);
+            Node eNode = new Node(5);
+            Node fNode = new Node(6);
 
             head.next = bNode;
             bNode.next = cNode;
@@ -541,8 +562,7 @@ namespace Algorithms
             dNode.next = eNode;
             eNode.next = fNode;
 
-            RemoveDuplicateLinkedList.remove(head);
-
+            KthFromLastLinkedList.find(head,4);
             /*
              * Ex1: Blanagram
              */
