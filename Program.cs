@@ -463,6 +463,7 @@ namespace Algorithms
              * 31. Write an algorithm to determine if a linkedlist is a palindrome
              * */
 
+            /*
             Node head = new Node('a');
             head.next = new Node('b');
             head.next.next = new Node('c');
@@ -471,6 +472,25 @@ namespace Algorithms
             
 
             LinkedListPalindrome.isPalindrome(head);
+            */
+
+            /* 32. Write an algorithm to determine if a linkedlist is circular. FOLLOW UP: Determine where the circle meets.
+             * */
+
+            Node head = new Node('a');
+            Node bNode = new Node('b');
+            Node cNode = new Node('c');
+            Node dNode = new Node('d');
+            Node eNode = new Node('e');
+            Node fNode = new Node('f');
+            head.next = bNode;
+            bNode.next = cNode;
+            cNode.next = dNode;
+            dNode.next = eNode;
+            eNode.next = fNode;
+            fNode.next = cNode;
+
+            Console.WriteLine(CircularLinkedList.isCircular(head));
 
             /*
              * Ex1: Blanagram
@@ -594,5 +614,5 @@ namespace Algorithms
 
         }
 
-}
+    }
 }
