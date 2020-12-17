@@ -664,17 +664,32 @@ namespace Algorithms
             /* 40. Given a singly linked list, find middle of the linked list.
              */
 
+            //Node head = new Node(1);
+            //head.next = new Node(2);
+            //head.next.next = new Node(3);
+            //head.next.next.next = new Node(4);
+            //head.next.next.next.next = new Node(5);
+
+            //LinkedListMiddle.middle(head);
+
+            /* 41.	Given a linked list, write a function to reverse every k nodes (where k is an input to the function)
+             */
+
             Node head = new Node(1);
-            head.next = new Node(2);
-            head.next.next = new Node(3);
-            head.next.next.next = new Node(4);
-            head.next.next.next.next = new Node(5);
+            Node bNode = new Node(2);
+            Node cNode = new Node(3);
+            Node dNode = new Node(4);
+            Node eNode = new Node(5);
+            Node fNode = new Node(6);
 
-            LinkedListMiddle.middle(head);
+            head.next = bNode;
+            bNode.next = cNode;
+            cNode.next = dNode;
+            dNode.next = eNode;
+            eNode.next = fNode;
 
-
-
-
+            Node node=ReverseLinkedListK.reverse(head,3);
+            ReverseLinkedListK.print(node);
             /*
              * Ex1: Blanagram
              */
