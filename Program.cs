@@ -675,6 +675,26 @@ namespace Algorithms
             /* 41.	Given a linked list, write a function to reverse every k nodes (where k is an input to the function)
              */
 
+            //Node head = new Node(1);
+            //Node bNode = new Node(2);
+            //Node cNode = new Node(3);
+            //Node dNode = new Node(4);
+            //Node eNode = new Node(5);
+            //Node fNode = new Node(6);
+
+            //head.next = bNode;
+            //bNode.next = cNode;
+            //cNode.next = dNode;
+            //dNode.next = eNode;
+            //eNode.next = fNode;
+
+            //Node node=ReverseLinkedListK.reverse(head,3);
+            //ReverseLinkedListK.print(node);
+
+            /* 42. Given a singly linked list, rotate the linked list counter-clockwise by k nodes.
+             * Where k is a given positive integer smaller than or equal to length of the linked list.
+             * */
+
             Node head = new Node(1);
             Node bNode = new Node(2);
             Node cNode = new Node(3);
@@ -688,8 +708,8 @@ namespace Algorithms
             dNode.next = eNode;
             eNode.next = fNode;
 
-            Node node=ReverseLinkedListK.reverse(head,3);
-            ReverseLinkedListK.print(node);
+            Node node=RotateCounterClockWiseLinkedList.rotate(head,4);
+            RotateCounterClockWiseLinkedList.print(node);
             /*
              * Ex1: Blanagram
              */
