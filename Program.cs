@@ -28,6 +28,20 @@ namespace Algorithms
             this.rand = null;
         }
     }
+
+    class TNode
+    {
+        public int data;
+        public TNode lTree;
+        public TNode rTree;
+        
+        public TNode(int data)
+        {
+            this.data = data;
+            this.lTree = null;
+            this.rTree = null;
+        }
+    }
     class Program
     {
         static void Main(string[] args)
@@ -624,8 +638,40 @@ namespace Algorithms
             //LinkedListReverse.print(node);
 
             /*
-             * Given a singly linked list which has data sorted in ascending order, construct a balanced BST.
+             * 39. Given a singly linked list which has data sorted in ascending order, construct a balanced BST.
              */
+
+
+
+            //Node head = new Node(1);
+            //Node bNode = new Node(2);
+            //Node cNode = new Node(3);
+            //Node dNode = new Node(4);
+            //Node eNode = new Node(5);
+            //Node fNode = new Node(6);
+
+            //head.next = bNode;
+            //bNode.next = cNode;
+            //cNode.next = dNode;
+            //dNode.next = eNode;
+            //eNode.next = fNode;
+
+            //TNode parent=LinkedListToBST.lToBST(head,fNode);
+            //LinkedListToBST.inOrderTraversal(parent);
+
+
+
+            /* 40. Given a singly linked list, find middle of the linked list.
+             */
+
+            Node head = new Node(1);
+            head.next = new Node(2);
+            head.next.next = new Node(3);
+            head.next.next.next = new Node(4);
+            head.next.next.next.next = new Node(5);
+
+            LinkedListMiddle.middle(head);
+
 
 
 
@@ -723,22 +769,6 @@ namespace Algorithms
             string hex= "3E8";
             RGBToHex.convertHexToInt(hex);
             */
-
-
-            /*
-             * Middle of a linked list */
-            /*
-
-            Node head = new Node(1);
-            head.next = new Node(2);
-            head.next.next = new Node(3);
-            head.next.next.next = new Node(4);
-            head.next.next.next.next = new Node(5);
-
-            LinkedListMiddle.middle(head);
-
-                */
-
         }
 
     }
