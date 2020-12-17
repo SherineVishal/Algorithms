@@ -610,18 +610,24 @@ namespace Algorithms
              * 38. Reverse a linkedlist iteratively and recursively
              * */
 
-            Node head = new Node(1);
-            head.next = new Node(2);
-            head.next.next = new Node(3);
-            head.next.next.next = new Node(4);
-            head.next.next.next.next = new Node(5);
+            //Node head = new Node(1);
+            //head.next = new Node(2);
+            //head.next.next = new Node(3);
+            //head.next.next.next = new Node(4);
+            //head.next.next.next.next = new Node(5);
 
-            LinkedListReverse.print(head);
+            //LinkedListReverse.print(head);
 
             //Node node=LinkedListReverse.reverse(head);
-            Node node = LinkedListReverse.recursiveReverse(head);
+            //Node node = LinkedListReverse.recursiveReverse(head);
 
-            LinkedListReverse.print(node);
+            //LinkedListReverse.print(node);
+
+            /*
+             * Given a singly linked list which has data sorted in ascending order, construct a balanced BST.
+             */
+
+
 
             /*
              * Ex1: Blanagram
