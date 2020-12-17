@@ -565,15 +565,36 @@ namespace Algorithms
             //KthFromLastLinkedList.find(head,4);
 
             /*
-             * Implement an algorithm to delete a node a singly linked list, given only access to that node.
+             * 36. Implement an algorithm to delete a node a singly linked list, given only access to that node.
              */
 
-            Node head = new Node(1);
+            //Node head = new Node(1);
+            //Node bNode = new Node(2);
+            //Node cNode = new Node(3);
+            //Node dNode = new Node(4);
+            //Node eNode = new Node(5);
+            //Node fNode = new Node(6);
+
+            //head.next = bNode;
+            //bNode.next = cNode;
+            //cNode.next = dNode;
+            //dNode.next = eNode;
+            //eNode.next = fNode;
+
+            //DeleteNode.print(head);
+            //DeleteNode.delete(cNode);
+            //DeleteNode.print(head);
+
+            /* 
+             * Write code to partition a linkedlist around a value x, such that all nodes less than x come before all nodes great than or equal to x
+             */
+
+            Node head = new Node(4);
             Node bNode = new Node(2);
-            Node cNode = new Node(3);
-            Node dNode = new Node(4);
-            Node eNode = new Node(5);
-            Node fNode = new Node(6);
+            Node cNode = new Node(6);
+            Node dNode = new Node(3);
+            Node eNode = new Node(1);
+            Node fNode = new Node(5);
 
             head.next = bNode;
             bNode.next = cNode;
@@ -581,9 +602,9 @@ namespace Algorithms
             dNode.next = eNode;
             eNode.next = fNode;
 
-            DeleteNode.print(head);
-            DeleteNode.delete(cNode);
-            DeleteNode.print(head);
+            SortLinkedList.print(head);
+            Node node=SortLinkedList.sort(head,3);
+            SortLinkedList.print(node);
 
             /*
              * Ex1: Blanagram
