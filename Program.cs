@@ -695,21 +695,58 @@ namespace Algorithms
              * Where k is a given positive integer smaller than or equal to length of the linked list.
              * */
 
-            Node head = new Node(1);
-            Node bNode = new Node(2);
-            Node cNode = new Node(3);
-            Node dNode = new Node(4);
-            Node eNode = new Node(5);
-            Node fNode = new Node(6);
+            //Node head = new Node(1);
+            //Node bNode = new Node(2);
+            //Node cNode = new Node(3);
+            //Node dNode = new Node(4);
+            //Node eNode = new Node(5);
+            //Node fNode = new Node(6);
 
-            head.next = bNode;
+            //head.next = bNode;
+            //bNode.next = cNode;
+            //cNode.next = dNode;
+            //dNode.next = eNode;
+            //eNode.next = fNode;
+
+            //Node node=RotateCounterClockWiseLinkedList.rotate(head,4);
+            //RotateCounterClockWiseLinkedList.print(node);
+
+            /*
+             * 43. Given two linked lists sorted in ascending order. Merge them in-place and return head of the merged list. 
+               It is strongly recommended to do merging in-place using O(1) extra space.
+            */
+
+            Node head1 = new Node(4);
+            Node bNode = new Node(6);
+            Node cNode = new Node(7);
+            Node dNode = new Node(9);
+            Node eNode = new Node(10);
+            Node fNode = new Node(11);
+
+            head1.next = bNode;
             bNode.next = cNode;
             cNode.next = dNode;
             dNode.next = eNode;
             eNode.next = fNode;
 
-            Node node=RotateCounterClockWiseLinkedList.rotate(head,4);
-            RotateCounterClockWiseLinkedList.print(node);
+            Node head2 = new Node(1);
+            Node b2Node = new Node(2);
+            Node c2Node = new Node(3);
+            Node d2Node = new Node(5);
+            Node e2Node = new Node(8);
+            Node f2Node = new Node(12);
+
+            head2.next = b2Node;
+            b2Node.next = c2Node;
+            c2Node.next = d2Node;
+            d2Node.next = e2Node;
+            e2Node.next = f2Node;
+
+            Merge2LinkedList.print(head1);
+            Merge2LinkedList.print(head2);
+            Node node=Merge2LinkedList.merge(head1,head2);
+            Merge2LinkedList.print(node);
+
             /*
              * Ex1: Blanagram
              */
