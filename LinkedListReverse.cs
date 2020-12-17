@@ -6,8 +6,11 @@ namespace Algorithms
 {
     class LinkedListReverse
     {
-        public static void reverse(Node head)
+        public static Node reverse(Node head)
         {
+            if (head == null || head.next==null)
+                return head;
+                        
             Node prev = null;
             Node cur = head;
             Node next=null;
@@ -19,13 +22,34 @@ namespace Algorithms
                 cur = next;
             }
             head = prev;
+            return head;
+        }
 
-            cur = head;
-            while (cur != null)
+        public static Node recursiveReverse(Node head)
+        {
+            if (head == null || head.next == null)
+                return head;
+
+            Node newHead = recursiveReverse(head.next);
+
+            head.next.next = head;
+            head.next = null;
+
+            return newHead;
+        }
+
+        public static void print(Node head)
+        {
+            Node cur = head;
+
+            while(cur!=null)
             {
-                Console.WriteLine(cur.data);
+                Console.Write("{0}->",cur.data);
                 cur = cur.next;
             }
-        }       
+            Console.WriteLine();
+        }
+
+
     }
 }

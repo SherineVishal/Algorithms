@@ -586,25 +586,42 @@ namespace Algorithms
             //DeleteNode.print(head);
 
             /* 
-             * Write code to partition a linkedlist around a value x, such that all nodes less than x come before all nodes great than or equal to x
+             * 37. Write code to partition a linkedlist around a value x, such that all nodes less than x come before all nodes great than or equal to x
              */
 
-            Node head = new Node(4);
-            Node bNode = new Node(2);
-            Node cNode = new Node(6);
-            Node dNode = new Node(3);
-            Node eNode = new Node(1);
-            Node fNode = new Node(5);
+            //Node head = new Node(4);
+            //Node bNode = new Node(2);
+            //Node cNode = new Node(6);
+            //Node dNode = new Node(3);
+            //Node eNode = new Node(1);
+            //Node fNode = new Node(5);
 
-            head.next = bNode;
-            bNode.next = cNode;
-            cNode.next = dNode;
-            dNode.next = eNode;
-            eNode.next = fNode;
+            //head.next = bNode;
+            //bNode.next = cNode;
+            //cNode.next = dNode;
+            //dNode.next = eNode;
+            //eNode.next = fNode;
 
-            SortLinkedList.print(head);
-            Node node=SortLinkedList.sort(head,3);
-            SortLinkedList.print(node);
+            //SortLinkedList.print(head);
+            //Node node=SortLinkedList.sort(head,3);
+            //SortLinkedList.print(node);
+
+            /*
+             * 38. Reverse a linkedlist iteratively and recursively
+             * */
+
+            Node head = new Node(1);
+            head.next = new Node(2);
+            head.next.next = new Node(3);
+            head.next.next.next = new Node(4);
+            head.next.next.next.next = new Node(5);
+
+            LinkedListReverse.print(head);
+
+            //Node node=LinkedListReverse.reverse(head);
+            Node node = LinkedListReverse.recursiveReverse(head);
+
+            LinkedListReverse.print(node);
 
             /*
              * Ex1: Blanagram
@@ -701,16 +718,6 @@ namespace Algorithms
             RGBToHex.convertHexToInt(hex);
             */
 
-            /* 
-             * Ex 11: Reverse a linked list */
-
-            //Node head = new Node(1);
-            //head.next = new Node(2);
-            //head.next.next = new Node(3);
-            //head.next.next.next = new Node(4);
-            //head.next.next.next.next = new Node(5);
-
-            //LinkedListReverse.reverse(head);
 
             /*
              * Middle of a linked list */
