@@ -44,12 +44,6 @@ namespace Algorithms
                     prev = prev.next;
                 }
             }
-
-            //while(cur1!=null)
-            //{
-            //    cur2.next = cur1;
-            //    cur1 = cur1.next;
-            //}
             return mHead;
         }
         public static void print(Node head)
