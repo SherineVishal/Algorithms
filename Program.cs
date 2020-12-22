@@ -688,7 +688,7 @@ namespace Algorithms
             //dNode.next = eNode;
             //eNode.next = fNode;
 
-            //Node node=ReverseLinkedListK.reverse(head,3);
+            //Node node = ReverseLinkedListK.reverse(head, 3);
             //ReverseLinkedListK.print(node);
 
             /* 42. Given a singly linked list, rotate the linked list counter-clockwise by k nodes.
@@ -748,26 +748,52 @@ namespace Algorithms
             //Merge2LinkedList.print(node);
 
             /*
-             * Given a singly linked list, write a function to swap elements pairwise
+             * 44. Given a singly linked list, write a function to swap elements pairwise
              */
 
+            //Node head1 = new Node(1);
+            //Node bNode = new Node(2);
+            //Node cNode = new Node(3);
+            //Node dNode = new Node(4);
+            //Node eNode = new Node(5);
+            //Node fNode = new Node(6);
+
+            //head1.next = bNode;
+            //bNode.next = cNode;
+            //cNode.next = dNode;
+            //dNode.next = eNode;
+            //eNode.next = fNode;
+
+            //SwapElementsLinkedList.print(head1);
+            //SwapElementsLinkedList.swap(head1);
+            //SwapElementsLinkedList.print(head1);
+
+            /* 45.	Given two numbers represented by two lists, write a function that returns sum list. 
+             * The sum list is list representation of addition of two input numbers.
+             * */
+
             Node head1 = new Node(1);
-            Node bNode = new Node(2);
-            Node cNode = new Node(3);
-            Node dNode = new Node(4);
-            Node eNode = new Node(5);
-            Node fNode = new Node(6);
+            Node bNode = new Node(9);
+            Node cNode = new Node(9);
+            Node dNode = new Node(7);
+            Node eNode = new Node(2);
+
 
             head1.next = bNode;
             bNode.next = cNode;
             cNode.next = dNode;
             dNode.next = eNode;
-            eNode.next = fNode;
 
-            SwapElementsLinkedList.print(head1);
-            SwapElementsLinkedList.swap(head1);
-            SwapElementsLinkedList.print(head1);
 
+            Node head2 = new Node(9);
+            Node b2Node = new Node(2);
+            Node c2Node = new Node(3);
+            
+
+            head2.next = b2Node;
+            b2Node.next = c2Node;
+
+            Add2NumbersLinkedList.add(head1, head2);
 
 
             /*

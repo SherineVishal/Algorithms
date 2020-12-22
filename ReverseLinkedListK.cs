@@ -6,13 +6,13 @@ namespace Algorithms
 {
     class ReverseLinkedListK
     {
-        public static Node reverse(Node head,int k)
+        public static Node reverse(Node head, int k)
         {
             Node prev = null;
             Node cur = head;
             Node next = null;
             int count = 0;
-            while(cur!=null && count<k)
+            while (cur != null && count < k)
             {
                 next = cur.next;
                 cur.next = prev;
@@ -21,10 +21,12 @@ namespace Algorithms
                 count++;
             }
 
-            if(cur!=null)
-                head.next=reverse(next,k);
+            if (cur != null)
+                head.next = reverse(next, k);
             return prev;
         }
+
+
 
         public static void print(Node head)
         {
