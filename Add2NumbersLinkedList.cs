@@ -155,6 +155,5 @@ namespace Algorithms
             }
             Console.WriteLine();
         }
-
     }
 }

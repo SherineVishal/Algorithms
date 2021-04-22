@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Algorithms
 {
+    //only positive integers
     class FindSubarrayWithGivenSum
     {
         public static void findSubArray(int[] arr,int lookupSum)

@@ -47,13 +47,13 @@ namespace Algorithms
         static void Main(string[] args)
         {
             /* 
-              
+
             1.Find the element that appears once in a sorted array where all other elements appear twice one after another. 
             Find that element in 0(logn) complexity. 
-             
+
             Input: arr[] = {1, 1, 3, 3, 4, 5, 5, 7, 7, 8, 8} 
             Output: 4
-            
+
             */
 
             /*
@@ -485,7 +485,7 @@ namespace Algorithms
             head.next.next = new Node('c');
             head.next.next.next = new Node('c');
             head.next.next.next.next = new Node('b');
-            
+
 
             LinkedListPalindrome.isPalindrome(head);
             */
@@ -771,7 +771,7 @@ namespace Algorithms
             /* 45.	Given two numbers represented by two lists, write a function that returns sum list. 
              * The sum list is list representation of addition of two input numbers.
              * */
-
+            /*
             Node head1 = new Node(1);
             Node bNode = new Node(9);
             Node cNode = new Node(9);
@@ -788,13 +788,13 @@ namespace Algorithms
             Node head2 = new Node(9);
             Node b2Node = new Node(2);
             Node c2Node = new Node(3);
-            
+
 
             head2.next = b2Node;
             b2Node.next = c2Node;
 
             Add2NumbersLinkedList.add(head1, head2);
-
+            */
 
             /*
              * Ex1: Blanagram
@@ -890,7 +890,198 @@ namespace Algorithms
             string hex= "3E8";
             RGBToHex.convertHexToInt(hex);
             */
-        }
 
+            /*find maximum consecutive repeating character in string.
+
+            Input : str = "aaaaaabbcbbbbbcbbbb"
+
+            Output :a*/
+
+
+            //string str = "aaaaaabbcbbbbbcbbbb";
+            //MaxRepeatedChars.maxRepeatedChars(str);
+
+
+            /* Merge two sorted arrays into one sorted array
+             */
+
+
+            //int[] arr1 = { 1, 5, 7, 12, 18, 32 };
+            //int[] arr2 = { 2, 4, 9, 16, 27, 76, 98 };
+
+            //int[] mergedArray=MergeTwoSortedArray.mergeTwoSortedArray(arr1,arr2);
+            //foreach (var item in mergedArray)
+            //    Console.WriteLine(item);
+
+
+            /*
+             * Write a small method  to do the below task.. this is not in sorted order.. all negative characters in left and positive on the right..
+             */
+
+            /*
+
+            int[] arr1 = { 4, -3, 2, -5, 5, -1, 3 };
+
+            int[] arr2 = { -3, -5, -1, 4, 2, 5, 3 };
+
+            int[] mergedArray = MergeNegativePositive.mergeNegativePositive(arr1,arr2);
+            foreach(var item in mergedArray)
+                Console.WriteLine(item);
+            */
+
+
+
+            //int[] arr = { 4, -3, 2, -5, 5, -1, 3 };
+
+            //SegregatePositiveNegative.segregatePositiveNegative(arr);
+
+            //foreach (var item in arr)
+            //    Console.WriteLine(item);
+
+
+            /*
+             * Segregate 0s on left side and 1s on right side of the array. Traverse array only once.
+             */
+
+
+
+            //int[] arr = { 0, 1, 0, 1, 0, 0, 1, 1, 1, 0 };
+            //Segregate01.segregate01(arr);
+
+            //foreach (var item in arr)
+            //    Console.WriteLine(item);
+
+
+
+            /*
+             * Given an unsorted array and a number n, find if there exists a pair of elements in the array whose difference is n.
+             */
+
+            //int[] arr = { 9, 29, 10, 2, 50, 24, 100 };
+            //FindPairWithNDiff.findPair(arr,50);
+
+
+            /*
+             * Write a simple code for finding the most repeated character in given string
+             */
+
+
+            //string str = "Hello!!! World!!!";
+            //MostRepeatedChars.mostRepeated(str);
+
+
+            /* Binary Tree Traversals */
+
+            //BinaryTree bTree = new BinaryTree();
+            //bTree.root = new tNode(1);
+            //bTree.root.leftPtr = new tNode(3);
+            //bTree.root.rightPtr = new tNode(9);
+            //bTree.root.leftPtr.leftPtr = new tNode(1);
+            //bTree.root.leftPtr.rightPtr = new tNode(5);
+            //bTree.root.rightPtr.leftPtr = new tNode(7);
+            //bTree.root.rightPtr.rightPtr = new tNode(11);
+
+            //Console.WriteLine("PreOrder");
+            //bTree.preOrderTraversal(bTree.root);
+
+            //Console.WriteLine("InOrder");
+            //bTree.inOrderTraversal(bTree.root);
+
+            //Console.WriteLine("PostOrder");
+            //bTree.postOrderTraversal(bTree.root);
+
+            //Console.WriteLine(bTree.isBST(bTree.root,int.MinValue,int.MaxValue));
+
+            /*Find a triplet that sum to a given value*/
+
+            //int[] array = { 1, 4, 45, 6, 10, 8 };
+            //TripletsSumK.findTriplets(array, 22);
+
+            /* Write a function to reverse the order of words in a string */
+            //string str = "i like this program very much";
+            //ReverseWordsInString.reverse(str.ToCharArray());
+
+            //ReverseOrderOfWords.reverse(str);
+
+            /*Write a function to check if two strings are anagrams or not ?*/
+
+            //string str1 = "apple dog";
+            //string str2 = "gapp eood";
+
+            //Anagrams.isAnagram(str1,str2);
+
+            //Most Frequent Element in an array
+
+            //int[] arr = { 1,4,2,3,1,2,5,4,3,2,1,2};
+            //MostFrequentNumberInAnArray.findMostFrequent(arr);
+
+            //Factorial of n
+
+            //Console.WriteLine(Factorial.factorial(5));
+
+            //Two sum problem
+
+            //int[] arr = { 0, -1, 2, -3, 1 };
+            //TwoNumberSum.find2Sum(arr,-2);
+
+            //string str = "Hello World";
+            //UniqueChar.isUnique(str);
+
+            //find the length of the longest substring without repeating characters
+            //string str = "abcabcbb";
+            //MaxLengthUniqueSubString.findMax(str);
+
+            //Fibonacci series
+
+            //int n = 10;
+
+            //for (int i = 0; i < n; i++)
+            //{
+            //    Console.WriteLine(FibonacciSeries.Fibonacci(i));
+            //}
+
+            //ReplaceSlashNWithSlashRSlahN.readAndWrite();
+
+            //Console.WriteLine(MaxLengthUniqueSubString.findMax("abcabcbb"));
+
+            //int n = 3;
+            //char[] str = new char[3 * 2];
+            //PrintParanthesis.printParanthesis(str, n);
+
+
+            //Tic Tac Toe
+
+            //int[,] board =
+            //{
+            //    { 1, 1, 0
+            //    },
+            //    { 0, 0, 1
+            //    },
+            //    { 1, 0, 1
+            //    }
+            //};
+
+            //Console.WriteLine(TicTacToe.isValid(board));
+
+            int[] a = { 2, 4, 2, 7, 1, 6, 1, 1, 1 };
+            int m = 4;
+            int k = 8;
+            int count = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                for (int j = i; j < m + i && j < a.Length; j++)
+                {
+                    for (int l = j; l < m + i && l < a.Length; l++)
+                    {
+                        int sum = a[j] + a[l];
+                        Console.WriteLine(sum);
+                        if (j != l && sum > k)
+                            count++;
+                        Console.WriteLine(count);
+                    }
+                }
+            }
+            Console.WriteLine(count);
+        }
     }
 }

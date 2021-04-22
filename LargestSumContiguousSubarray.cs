@@ -6,7 +6,7 @@ namespace Algorithms
 {
     class LargestSumContiguousSubarray
     {
-        //Using global and local sum
+        //Both positive and negative numbers
         public static void largestSum(int[] arr)
         {
             int maxGlobalSum = int.MinValue;
